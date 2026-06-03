@@ -624,7 +624,7 @@
     entries.forEach(e=>{
       if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
     });
-  },{threshold:.15});
+  },{threshold:.05});
   document.querySelectorAll('.reveal, .reveal-d, .stagger').forEach(el=>io.observe(el));
 
   script>
