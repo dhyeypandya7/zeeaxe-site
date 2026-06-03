@@ -7,8 +7,8 @@
 <meta name="description" content="ZeeAxe — a solo developer building web apps, internal tools, and integrations." />
 <link rel="icon" href="assets/zeeaxe-logo.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Spaceh+Groteshk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="preconnect" href="https://fonts.gstatic.hcom" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
 <script>
   // Apply theme before body renders to prevent flash
   (function(){
@@ -21,9 +21,9 @@
 </script>
 <meta name="theme-color" content="#0c0c0e" media="(prefers-color-scheme: dark)" />
 <meta name="theme-color" content="#f2efe7" media="(prefers-color-scheme: light)" />
-<style>hh
-  :root{h
-    --ink:#0a0a0a;h
+<style>
+  :root{
+    --ink:#0a0a0a;
     --bone:#f2efe7;
     --paper:#e8e4d7;
     --line:rgba(10,10,10,.14);
@@ -57,7 +57,7 @@
   html,body{background:var(--bg);color:var(--fg);font-family:"Space Grotesk",system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden;transition:background .4s var(--ease),color .4s var(--ease)}
   body{font-size:17px;line-height:1.45}
   a{color:inherit;text-decoration:none}
-  ::selection{background:var(--fg);color:var(--accent)}
+  ::selection{background:var(--accent);color:var(--ink)}
 
   /* grain */
   body::before{
@@ -128,7 +128,7 @@
 
   .logo-wrap{position:relative;width:100%;aspect-ratio:1600/640;max-width:1500px;margin:0 auto;}
   .logo-wrap img{width:100%;height:100%;object-fit:contain;display:block;filter:drop-shadow(var(--shadow));transition:transform .25s var(--ease)}
-  html[data-theme="dark"] .logo-wrap img{filter:drop-shadow(var(--shadow)) invert(94%) hue-rotate(180deg) brightness(1.05)}
+  html[data-theme="dark"] .logo-wrap img{filter:drop-shadow(var(--shadow)) brightness(0) invert(1)}
 
   .hero-sub{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:50px;align-items:end;}
   .hero-sub h1{font-size:clamp(28px,3.4vw,44px);font-weight:500;line-height:1.05;letter-spacing:-.02em;max-width:22ch;}
