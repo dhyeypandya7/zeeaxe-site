@@ -126,9 +126,6 @@
   .hero-meta .tag span{display:inline-block;width:8px;height:8px;background:var(--accent);margin-right:8px;transform:translateY(-1px);clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%)}
   .hero-meta .loc{font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;text-align:right;line-height:1.7;opacity:.7}
 
-  .logo-wrap{position:relative;width:100%;aspect-ratio:1600/640;max-width:1500px;margin:0 auto;}
-  .logo-wrap img{width:100%;height:100%;object-fit:contain;display:block;filter:drop-shadow(var(--shadow));transition:transform .25s var(--ease)}
-  html[data-theme="dark"] .logo-wrap img{filter:drop-shadow(var(--shadow)) brightness(0) invert(1)}
 
   .hero-sub{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:50px;align-items:end;}
   .hero-sub h1{font-size:clamp(28px,3.4vw,44px);font-weight:500;line-height:1.05;letter-spacing:-.02em;max-width:22ch;}
@@ -376,10 +373,6 @@
       Independent · Solo<br/>
       Available · Remote
     </div>
-  </div>
-
-  <div class="logo-wrap reveal-d" id="logoWrap">
-    <img src="assets/zeeaxe-logo.png" alt="Built by ZeeAxe" />
   </div>
 
   <div class="hero-sub">
@@ -634,16 +627,6 @@
   },{threshold:.15});
   document.querySelectorAll('.reveal, .reveal-d, .stagger').forEach(el=>io.observe(el));
 
-  // gentle logo parallax
-  const lw = document.getElementById('logoWrap');
-  const img = lw?.querySelector('img');
-  if(img && matchMedia('(pointer:fine)').matches){
-    window.addEventListener('mousemove',(e)=>{
-      const x = (e.clientX/window.innerWidth - .5);
-      const y = (e.clientY/window.innerHeight - .5);
-      img.style.transform = `translate3d(${x*12}px,${y*6}px,0) rotate(${x*.4}deg)`;
-    },{passive:true});
-  }
-</script>
+  script>
 </body>
 </html>
